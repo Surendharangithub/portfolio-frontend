@@ -36,7 +36,7 @@ export default function Navbar() {
       <div className="w-full flex items-center justify-between">
         <div ref={logoRef} className="font-sans text-base font-extrabold tracking-tightest text-on-surface select-none">
           {/* SURENCODES.COM */}
-          <img src='src/assets/logo.svg' alt='logo' className='w-36' />
+          <img src='./assets/logo.svg' alt='logo' className='w-36' />
         </div>
         <div className="flex items-center gap-10">
           {LINKS.map((link, i) => (
