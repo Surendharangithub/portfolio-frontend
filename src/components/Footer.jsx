@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="container-wide flex flex-wrap justify-between items-center gap-4">
         <div className="font-sans font-extrabold text-sm tracking-tightest text-on-surface">
           {/* ARCHITECT.IO */}
-          <img src="src/assets/logo.svg" alt="logo" className="w-36" />
+          <img src="./assets/logo.svg" alt="logo" className="w-36" />
         </div>
         <p className="text-sm text-on-surface-var">
           © {date} Surencodes.com — Built with precision.
