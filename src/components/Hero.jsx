@@ -63,7 +63,8 @@ export default function Hero() {
     >
       {/* ── Background image ──────────────────────── */}
       <img
-        src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1600&q=80"
+        // src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1600&q=80"
+        src='https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         // src='https://unsplash.com/photos/man-in-black-long-sleeve-shirt-using-computer-_Fx34KeqIEw'
         alt=""
         aria-hidden="true"
