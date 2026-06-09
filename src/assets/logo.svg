@@ -1,0 +1,53 @@
+<svg width="100%" viewBox="0 0 680 480" role="img" style="" xmlns="http://www.w3.org/2000/svg">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">SURENCODES.COM logo</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Less-than bracket, forward slash, greater-than bracket logo with SURENCODES.COM text</desc>
+
+  <defs>
+    <linearGradient id="lgL1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="lgL2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6d28d9"/>
+      <stop offset="100%" stop-color="#3b0fa0"/>
+    </linearGradient>
+    <linearGradient id="lgR1" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="lgR2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#01467a"/>
+    </linearGradient>
+    <linearGradient id="lgS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c0c1ff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ══ LEFT BRACKET < ══════════════════════════════ -->
+  <!-- Layer 2 (dark bottom/back face — offset down-right) -->
+  <path d="M292,163 L448,163 L448,175 L304,175 L240,228 L304,281 L448,281 L448,293 L292,293 L218,228 Z" fill="url(#lgL2)" opacity="0.0" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Back/shadow layer of the < chevron -->
+  <path d="M286,168 L222,233 L286,298 L272,298 L200,233 L272,168 Z" fill="url(#lgL2)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Front bright layer of the < chevron -->
+  <path d="M300,158 L236,223 L300,288 L286,288 L214,223 L286,158 Z" fill="url(#lgL1)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══ SLASH / ══════════════════════════════════════ -->
+  <!-- Back layer -->
+  <path d="M354,152 L374,152 L338,298 L318,298 Z" fill="#9090cc" opacity="0.5" style="fill:rgb(144, 144, 204);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.5;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Front layer -->
+  <path d="M348,146 L368,146 L332,292 L312,292 Z" fill="url(#lgS)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══ RIGHT BRACKET > ══════════════════════════════ -->
+  <!-- Back/shadow layer of the > chevron -->
+  <path d="M394,168 L458,233 L394,298 L408,298 L480,233 L408,168 Z" fill="url(#lgR2)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Front bright layer of the > chevron -->
+  <path d="M380,158 L444,223 L380,288 L394,288 L466,223 L394,158 Z" fill="url(#lgR1)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- ══ TEXT ══════════════════════════════════════════ -->
+  <text x="340" y="358" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="3" fill="#f0f0ff" style="fill:rgb(240, 240, 255);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Inter, Arial, sans-serif;font-size:34px;font-weight:800;text-anchor:middle;dominant-baseline:auto">SURENCODES.COM</text>
+
+  <text x="340" y="390" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" letter-spacing="6" fill="#7b7baa" style="fill:rgb(123, 123, 170);stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Inter, Arial, sans-serif;font-size:12px;font-weight:500;text-anchor:middle;dominant-baseline:auto">FULL STACK DEVELOPER</text>
+
+</svg>
