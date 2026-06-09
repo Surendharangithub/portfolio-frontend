@@ -35,7 +35,7 @@ export default function Projects() {
     gsap.set(cardsRef.current, { opacity: 0, y: 60, scale: 0.97 })
 
     gsap.to(headRef.current, {
-      opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+      opacity: 1, y: 0, duration: 0.8,   visibility: 'visible',  ease: 'power3.out',
       scrollTrigger: {
         trigger: headRef.current, start: 'top 85%',
         toggleActions: 'play none none none',

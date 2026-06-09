@@ -46,8 +46,8 @@ export default function Hero() {
   const typing   = useTyping(WORDS)
 
   useEffect(() => {
-    gsap.set([badgeRef.current, titleRef.current, paraRef.current, btnsRef.current],
-      { opacity: 0, y: 32 })
+    // gsap.set([badgeRef.current, titleRef.current, paraRef.current, btnsRef.current],
+    //   { opacity: 0, y: 32 })
 
     const tl = gsap.timeline({ defaults: { ease: 'power4.out' }, delay: 0.85 })
     tl.to(badgeRef.current, { opacity: 1, y: 0, duration: 0.7 })
@@ -107,6 +107,7 @@ export default function Hero() {
           {/* Badge */}
           <div
             ref={badgeRef}
+            style={{ opacity: 0, transform: 'translateY(32px)' }}
             className="inline-flex items-center gap-2 px-4 py-1.5 mb-7
                        bg-surface-mid/90 border border-primary/20 rounded-full"
           >
@@ -117,7 +118,7 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <div ref={titleRef} className="mb-7">
+          <div ref={titleRef} className="mb-7" style={{ opacity: 0, transform: 'translateY(32px)' }}>
             <h1
               className="font-sans font-extrabold tracking-tightest text-on-surface leading-[1.08]"
               style={{ fontSize: 'clamp(48px, 6.5vw, 80px)' }}
@@ -137,6 +138,7 @@ export default function Hero() {
           {/* Subtext */}
           <p
             ref={paraRef}
+            style={{ opacity: 0, transform: 'translateY(32px)' }}
             className="text-[17px] leading-[1.78] text-on-surface-var max-w-xl mb-11"
           >
             Alex Rivera crafts high-performance, scalable architectures with a focus
@@ -145,7 +147,7 @@ export default function Hero() {
           </p>
 
           {/* CTAs */}
-          <div ref={btnsRef} className="flex flex-wrap gap-3">
+          <div ref={btnsRef} className="flex flex-wrap gap-3" style={{ opacity: 0, transform: 'translateY(32px)' }}>
             <a href="#projects" className="btn-primary">View Portfolio</a>
             <a href="#contact"  className="btn-ghost">Get In Touch</a>
           </div>

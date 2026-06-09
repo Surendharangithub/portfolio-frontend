@@ -37,7 +37,7 @@ export default function Experience() {
     gsap.set(itemsRef.current, { opacity: 0, x: -32 })
 
     gsap.to(headRef.current, {
-      opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
+      opacity: 1, y: 0, duration: 0.8,   visibility: 'visible',  ease: 'power3.out',
       scrollTrigger: {
         trigger: headRef.current, start: 'top 85%',
         toggleActions: 'play none none none',
