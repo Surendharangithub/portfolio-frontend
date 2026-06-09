@@ -106,11 +106,7 @@
   }
 
   /* Primary CTA button */
-  .btn-primary {
-    @apply inline-flex items-center justify-center font-mono text-[11px] font-bold tracking-widest uppercase px-8 py-4 bg-primary text-[#1000a9] rounded-lg hover:shadow-[0_0_28px_rgba(99, 102, 241, 0.45)];
-    /* Only shadow transition — safe, GSAP never animates box-shadow on this element */
-    transition: box-shadow 0.3s ease;
-  }
+
 
   /* Ghost CTA button */
   .btn-ghost {
@@ -205,7 +201,11 @@
   }
 }
 
-.gsap-hidden {
-  opacity: 0;
-  transform: translateY(40px);
+.btn-primary {
+  @apply inline-flex items-center justify-center font-mono text-[11px] font-bold tracking-widest uppercase px-8 py-4 bg-primary text-[#1000a9] rounded-lg;
+  /* Only shadow transition — safe, GSAP never animates box-shadow on this element */
+  transition: box-shadow 0.3s ease;
+}
+.btn-primary:hover {
+  box-shadow: 0 0 28px rgba(99, 102, 241, 0.45);
 }

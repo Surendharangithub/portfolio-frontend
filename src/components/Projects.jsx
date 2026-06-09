@@ -31,8 +31,8 @@ export default function Projects() {
 
   useEffect(() => {
     // gsap.set FIRST — stamp elements as invisible before browser paints
-    gsap.set(headRef.current, { opacity: 0, y: 40 })
-    gsap.set(cardsRef.current, { opacity: 0, y: 60, scale: 0.97 })
+    // gsap.set(headRef.current, { opacity: 0, y: 40 })
+    // gsap.set(cardsRef.current, { opacity: 0, y: 60, scale: 0.97 })
 
     gsap.to(headRef.current, {
       opacity: 1, y: 0, duration: 0.8,   visibility: 'visible',  ease: 'power3.out',
@@ -60,7 +60,7 @@ export default function Projects() {
     <section id="projects" className="py-28 bg-surface-dim">
       <div className="container-wide">
         {/* Heading — no transition class, GSAP owns opacity+transform */}
-        <div ref={headRef} className="section-head mb-16" style={{ willChange: 'transform, opacity' }}>
+        <div ref={headRef} className="section-head mb-16" style={{ willChange: 'transform, opacity',  opacity: 0, transform: 'translateY(40px)', }}>
           <h2>Selected Works</h2>
           <div className="accent-bar" />
         </div>
@@ -73,7 +73,8 @@ export default function Projects() {
               /* ⚠ NO transition-all — it would fight GSAP on opacity/transform.
                  Only hover:shadow and hover:-translate-y kept via CSS custom property trick */
               className="project-card glass rounded-2xl overflow-hidden cursor-pointer"
-              style={{ willChange: 'transform, opacity' }}
+              // style={{ willChange: 'transform, opacity' }}
+              style={{ opacity: 0, transform: 'translateY(60px)', willChange: 'transform, opacity' }}
               onMouseEnter={e => gsap.to(e.currentTarget, { y: -8, boxShadow: '0 28px 60px rgba(99,102,241,0.18)', duration: 0.3, ease: 'power2.out' })}
               onMouseLeave={e => gsap.to(e.currentTarget, { y: 0,  boxShadow: '0 0px 0px rgba(0,0,0,0)',           duration: 0.3, ease: 'power2.out' })}
             >
