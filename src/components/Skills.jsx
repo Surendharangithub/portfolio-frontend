@@ -23,7 +23,7 @@ export default function Skills() {
       opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
       scrollTrigger: {
         trigger: headRef.current, start: 'top 85%',
-        toggleActions: 'play reverse play reverse',
+        toggleActions: 'play none none none',
       },
     })
 
@@ -32,7 +32,7 @@ export default function Skills() {
         opacity: 1, y: 0, duration: 0.85, ease: 'power3.out', delay: i * 0.12,
         scrollTrigger: {
           trigger: card, start: 'top 88%',
-          toggleActions: 'play reverse play reverse',
+          toggleActions: 'play none none none',
         },
       })
     })

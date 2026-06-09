@@ -22,14 +22,14 @@ export default function Contact() {
       opacity: 1, x: 0, duration: 1, ease: 'power3.out',
       scrollTrigger: {
         trigger: leftRef.current, start: 'top 85%',
-        toggleActions: 'play reverse play reverse',
+        toggleActions: 'play none none none',
       },
     })
     gsap.to(rightRef.current, {
       opacity: 1, x: 0, duration: 1, ease: 'power3.out', delay: 0.14,
       scrollTrigger: {
         trigger: rightRef.current, start: 'top 85%',
-        toggleActions: 'play reverse play reverse',
+        toggleActions: 'play none none none',
       },
     })
 

@@ -40,7 +40,7 @@ export default function Experience() {
       opacity: 1, y: 0, duration: 0.8, ease: 'power3.out',
       scrollTrigger: {
         trigger: headRef.current, start: 'top 85%',
-        toggleActions: 'play reverse play reverse',
+        toggleActions: 'play none none none',
       },
     })
 
@@ -48,7 +48,7 @@ export default function Experience() {
       scaleY: 1, transformOrigin: 'top center', duration: 1.4, ease: 'power2.inOut',
       scrollTrigger: {
         trigger: lineRef.current, start: 'top 80%',
-        toggleActions: 'play reverse play reverse',
+        toggleActions: 'play none none none',
       },
     })
 
@@ -57,7 +57,7 @@ export default function Experience() {
         opacity: 1, x: 0, duration: 0.8, ease: 'power3.out', delay: i * 0.15,
         scrollTrigger: {
           trigger: item, start: 'top 88%',
-          toggleActions: 'play reverse play reverse',
+          toggleActions: 'play none none none',
         },
       })
     })
