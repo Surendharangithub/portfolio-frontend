@@ -7,6 +7,7 @@ import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import axios from 'axios'
+import { Helmet } from 'react-helmet-async'
 
 export default function App() {
   const glowRef = useRef(null);
@@ -37,6 +38,10 @@ export default function App() {
 
   return (
     <>
+      <Helmet>
+        <title>Surendharan | Full Stack Developer</title>
+        <meta property="og:image" content="./assets/hero.png" />
+      </Helmet>
       <div ref={glowRef} className="cursor-glow" />
       <Navbar />
       <main className="relative z-10">
