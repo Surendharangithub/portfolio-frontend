@@ -145,9 +145,7 @@ export default function Hero() {
             style={{ opacity: 0, transform: 'translateY(32px)',  willChange: 'transform, opacity'  }}
             className="text-[17px] leading-[1.78] text-on-surface-var max-w-xl mb-11"
           >
-            Alex Rivera crafts high-performance, scalable architectures with a focus
-            on precision and editorial design quality. Turning complex code into
-            elegant user journeys.
+            Delivering scalable full-stack solutions with a sharp focus on performance, clean architecture, and design that resonates with users.
           </p>
 
           {/* CTAs */}

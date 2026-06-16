@@ -14,10 +14,8 @@ export default function App() {
   useEffect(() => {
     const fetching = async () => {
       try {
-
         const response = await axios.get(`${import.meta.env.VITE_API_URL}`)
-        const data = await response.json();
-        console.log('response', data);
+        console.log('response', response);
       } catch (err) {
         console.error('Fetch error:', err);
       }
@@ -43,7 +41,7 @@ export default function App() {
       <Navbar />
       <main className="relative z-10">
         <Hero />
-        <Projects />
+        {/* <Projects /> */}
         <Skills />
         <Experience />
         <Contact />

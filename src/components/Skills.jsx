@@ -8,7 +8,7 @@ const SKILLS = [
   { icon: '⌨', title: 'Frontend', items: ['React', 'TypeScript', 'GSAP', 'Tailwind CSS','React Hook Form', 'Zod'] },
   { icon: '⚙', title: 'Backend',  items: ['Node.js', 'Express.js', 'PostgreSQL', 'REST API', 'JWT Authentication', 'Redis'] },
   { icon: '☁', title: 'Cloud & DevOps',   items: ['Vercel', 'Netlify', 'Docker', 'Ngnix'] },
-  { icon: '☁', title: 'Tools',   items: ['vs code', 'Github', 'postman', 'JIRa', 'Linux'] },
+  { icon: '🔧', title: 'Tools',   items: ['vs code', 'Github', 'postman', 'JIRa', 'Linux'] },
 ]
 
 export default function Skills() {

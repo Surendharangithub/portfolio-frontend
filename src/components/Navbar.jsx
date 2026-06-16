@@ -1,7 +1,9 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
-const LINKS = ['Projects', 'Skills', 'Experience', 'Contact']
+const LINKS = [
+  // 'Projects', 
+  'Skills', 'Experience', 'Contact']
 
 export default function Navbar() {
   const navRef = useRef(null)
@@ -20,6 +22,11 @@ export default function Navbar() {
       .to(linksRef.current, { opacity: 1, y: 0, duration: 0.45, stagger: 0.07 }, '-=0.35')
       .to(btnRef.current, { opacity: 1, y: 0, duration: 0.45 }, '-=0.3')
   }, [])
+
+  const handleScroll = (link) => {
+    const section = document.getElementById(link);
+    if (section) section.scrollIntoView({ behavior: 'smooth' })
+  }
 
   return (
     <nav
@@ -42,20 +49,29 @@ export default function Navbar() {
         </div>
         <div className="flex items-center gap-10">
           {LINKS.map((link, i) => (
-            <a key={link} href={`#${link.toLowerCase()}`} className="nav-link"
-              ref={el => linksRef.current[i] = el} style={{ opacity: 0, transform: 'translateY(-12px)' }}>
+            <span
+              key={link}
+              className="nav-link cursor-pointer"
+              ref={el => linksRef.current[i] = el}
+              style={{ opacity: 0, transform: 'translateY(-12px)' }}
+              onClick={() => handleScroll(link.toLowerCase())}
+            >
               {link}
-            </a>
+            </span>
           ))}
-          <button
+          <a
             ref={btnRef}
+            href='./assets/resume/Surendharan_Resume.pdf'
             className="font-mono text-[11px] font-bold tracking-widest uppercase
                        px-5 py-2 bg-primary text-[#1000a9] rounded-full
                        cursor-pointer border-none pulse-glow"
-            style={{opacity: 0, transform: 'translateY(-12px)', willChange: 'transform, opacity' }}
+            download={'Surendharan R Resume.pdf'}
+            target='_blank'
+            rel="noopener noreferrer"
+            style={{ opacity: 0, transform: 'translateY(-12px)', willChange: 'transform, opacity' }}
           >
             Resume
-          </button>
+          </a>
         </div>
       </div>
     </nav>

@@ -1,22 +1,46 @@
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useForm } from "react-hook-form"
+import axios from 'axios'
 
 gsap.registerPlugin(ScrollTrigger)
 
 const SOCIALS = [
-  { icon: '✉',   label: 'surenrengarajan@gmail.com',      href: 'mailto:surenrengarajan@gmail.com' },
-  { icon: '⬡',   label: 'LinkedIn / Profile',      href: 'https://www.linkedin.com/in/surendharan/' },
-  { icon: '</>',  label: 'Github / Surendharangithub',  href: 'https://github.com/Surendharangithub' },
+  { icon: '✉', label: 'surenrengarajan@gmail.com', href: 'mailto:surenrengarajan@gmail.com' },
+  { icon: '⬡', label: 'LinkedIn / Profile', href: 'https://www.linkedin.com/in/surendharan/' },
+  { icon: '</>', label: 'Github / Surendharangithub', href: 'https://github.com/Surendharangithub' },
 ]
 
 export default function Contact() {
-  const leftRef  = useRef(null)
+  const leftRef = useRef(null)
   const rightRef = useRef(null)
 
+  const { register, handleSubmit } = useForm({
+    defaultValue: {
+      name: '',
+      email: '',
+      message: ''
+    }
+  })
+  const onSubmit = async (data) => {
+
+    try {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/v1/api/email`, {
+          email: data?.email
+      })
+      console.log('respo', response)
+    } catch (err) {
+      console.log('error', err)
+    }
+
+    // e.preventDefault()
+    console.log('data123', data);
+  }
+
   useEffect(() => {
-    gsap.set(leftRef.current,  { opacity: 0, x: -40 })
-    gsap.set(rightRef.current, { opacity: 0, x:  40 })
+    gsap.set(leftRef.current, { opacity: 0, x: -40 })
+    gsap.set(rightRef.current, { opacity: 0, x: 40 })
 
     gsap.to(leftRef.current, {
       opacity: 1, x: 0, duration: 1, ease: 'power3.out',
@@ -75,25 +99,25 @@ export default function Contact() {
           </div>
 
           {/* Right — Form */}
-          <div ref={rightRef} className="glass rounded-2xl p-8" style={{ willChange: 'transform, opacity' }}>
+          <form ref={rightRef} onSubmit={handleSubmit(onSubmit)} className="glass rounded-2xl p-8" style={{ willChange: 'transform, opacity' }}>
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
                 <label className="block font-mono text-[10px] font-semibold tracking-widest uppercase text-on-surface-var mb-2">Name</label>
-                <input type="text" placeholder="Alex Rivera" />
+                <input {...register('name')} type="text" placeholder="Alex Rivera" />
               </div>
               <div>
                 <label className="block font-mono text-[10px] font-semibold tracking-widest uppercase text-on-surface-var mb-2">Email</label>
-                <input type="email" placeholder="alex@example.com" />
+                <input {...register('email')} type="email" placeholder="alex@example.com" />
               </div>
             </div>
             <div className="mb-6">
               <label className="block font-mono text-[10px] font-semibold tracking-widest uppercase text-on-surface-var mb-2">Message</label>
-              <textarea rows={5} placeholder="Tell me about your project..." />
+              <textarea  {...register('message')} rows={5} placeholder="Tell me about your project..." />
             </div>
             <button className="btn-primary w-full justify-center">
               Send Transmission
             </button>
-          </div>
+          </form>
 
         </div>
       </div>
