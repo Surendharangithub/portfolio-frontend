@@ -103,19 +103,19 @@ export default function Contact() {
             <div className="grid grid-cols-2 gap-4 mb-4">
               <div>
                 <label className="block font-mono text-[10px] font-semibold tracking-widest uppercase text-on-surface-var mb-2">Name</label>
-                <input {...register('name')} type="text" placeholder="Alex Rivera" />
+                <input {...register('name')} type="text" placeholder="What should I call you?" />
               </div>
               <div>
                 <label className="block font-mono text-[10px] font-semibold tracking-widest uppercase text-on-surface-var mb-2">Email</label>
-                <input {...register('email')} type="email" placeholder="alex@example.com" />
+                <input {...register('email')} type="email" placeholder="Where can I reach you?" />
               </div>
             </div>
             <div className="mb-6">
               <label className="block font-mono text-[10px] font-semibold tracking-widest uppercase text-on-surface-var mb-2">Message</label>
-              <textarea  {...register('message')} rows={5} placeholder="Tell me about your project..." />
+              <textarea  {...register('message')} rows={5} placeholder="Got a project in mind? Let's talk..." />
             </div>
             <button className="btn-primary w-full justify-center">
-              Send Transmission
+              Send Message
             </button>
           </form>
 
