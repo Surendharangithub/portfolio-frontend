@@ -40,7 +40,17 @@ export default function App() {
     <>
       <Helmet>
         <title>Surendharan | Full Stack Developer</title>
-        <meta property="og:image" content="./assets/hero.png" />
+
+        {/* OG Image must be full URL */}
+        <meta property="og:image" content="https://surencodes.com/assets/hero.png" />
+        <meta property="og:title" content="Surendharan | Full Stack Developer" />
+        <meta property="og:description" content="Full Stack Developer crafting scalable, high-performance digital experiences." />
+        <meta property="og:url" content="https://surencodes.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="https://surencodes.com/assets/hero.png" />
       </Helmet>
       <div ref={glowRef} className="cursor-glow" />
       <Navbar />
