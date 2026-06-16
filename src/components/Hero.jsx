@@ -60,6 +60,11 @@ export default function Hero() {
       .to(btnsRef.current, { opacity: 1, y: 0, duration: 0.6, overwrite: 'auto' }, '-=0.4')
   }, [])
 
+  const handleScroll = (link) => {
+    const section = document.getElementById(link);
+    if (section) section.scrollIntoView({ behavior: 'smooth' })
+  }
+
   return (
     <section
       id="hero"
@@ -70,7 +75,7 @@ export default function Hero() {
         // src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1600&q=80"
         src='https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
         // src='https://unsplash.com/photos/man-in-black-long-sleeve-shirt-using-computer-_Fx34KeqIEw'
-        alt=""
+        alt="bg-img"
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover object-center"
         style={{ opacity: 0.18, filter: 'grayscale(0.25)', zIndex: 0 }}
@@ -150,8 +155,8 @@ export default function Hero() {
 
           {/* CTAs */}
           <div ref={btnsRef} className="flex flex-wrap gap-3" style={{ opacity: 0, transform: 'translateY(32px)',  willChange: 'transform, opacity'  }}>
-            <a href="#projects" className="btn-primary">View Portfolio</a>
-            <a href="#contact" className="btn-ghost">Get In Touch</a>
+            <span className="btn-primary" onClick={()=> handleScroll('projects')}>View Portfolio</span>
+            <span className="btn-ghost" onClick={()=> handleScroll('contact')} >Get In Touch</span>
           </div>
         </div>
       </div>
