@@ -155,8 +155,8 @@ export default function Hero() {
 
           {/* CTAs */}
           <div ref={btnsRef} className="flex flex-wrap gap-3" style={{ opacity: 0, transform: 'translateY(32px)',  willChange: 'transform, opacity'  }}>
-            <span className="btn-primary" onClick={()=> handleScroll('projects')}>View Portfolio</span>
-            <span className="btn-ghost" onClick={()=> handleScroll('contact')} >Get In Touch</span>
+            <span className="btn-primary cursor-pointer" onClick={()=> handleScroll('projects')}>View Portfolio</span>
+            <span className="btn-ghost cursor-pointer" onClick={()=> handleScroll('contact')} >Get In Touch</span>
           </div>
         </div>
       </div>
