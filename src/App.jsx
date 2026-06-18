@@ -7,7 +7,7 @@ import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import axios from 'axios'
-import { Helmet } from 'react-helmet-async'
+import { Toaster } from "react-hot-toast"
 
 export default function App() {
   const glowRef = useRef(null);
@@ -38,20 +38,7 @@ export default function App() {
 
   return (
     <>
-      <Helmet>
-        <title>Surendharan | Full Stack Developer</title>
-
-        {/* OG Image must be full URL */}
-        <meta property="og:image" content="https://surencodes.com/assets/hero.png" />
-        <meta property="og:title" content="Surendharan | Full Stack Developer" />
-        <meta property="og:description" content="Full Stack Developer crafting scalable, high-performance digital experiences." />
-        <meta property="og:url" content="https://surencodes.com" />
-        <meta property="og:type" content="website" />
-
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="https://surencodes.com/assets/hero.png" />
-      </Helmet>
+      <Toaster position='top-center' />
       <div ref={glowRef} className="cursor-glow" />
       <Navbar />
       <main className="relative z-10">

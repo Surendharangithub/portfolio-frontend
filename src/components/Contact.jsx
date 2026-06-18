@@ -3,6 +3,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useForm } from "react-hook-form"
 import axios from 'axios'
+import toast from 'react-hot-toast'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -24,15 +25,17 @@ export default function Contact() {
     }
   })
   const onSubmit = async (data) => {
-
-    try {
-      const response = await axios.post(`${import.meta.env.VITE_API_URL}/v1/api/email`, {
-          email: data?.email
-      })
-      console.log('respo', response)
-    } catch (err) {
-      console.log('error', err)
-    }
+    toast.success('Email Send Successfully!', {
+      duration: 3000,
+    })
+    // try {
+    //   const response = await axios.post(`${import.meta.env.VITE_API_URL}/v1/api/email`, {
+    //       email: data?.email
+    //   })
+    //   console.log('respo', response)
+    // } catch (err) {
+    //   console.log('error', err)
+    // }
 
     // e.preventDefault()
     console.log('data123', data);
